@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones en JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Sistema de calificaciones</h1>
+
+    <p>Escribe las tres notas del estudiante:</p>
+
+    <label for="nota1">Nota 1:</label>
+    <input type="number" id="nota1" min="0" max="5" step="0.1" value="4">
+
+    <br><br>
+
+    <label for="nota2">Nota 2:</label>
+    <input type="number" id="nota2" min="0" max="5" step="0.1" value="3.5">
+
+    <br><br>
+
+    <label for="nota3">Nota 3:</label>
+    <input type="number" id="nota3" min="0" max="5" step="0.1" value="5">
+
+    <br><br>
+
+    <button onclick="ejecutarEjemplo()">Calcular promedio</button>
+
+    <div id="resultado">
+        <p>Aquí aparecerá el resultado.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
