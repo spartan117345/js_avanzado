@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo del BOM</title>
+</head>
+<body>
+
+    <h1>Ejemplo del BOM</h1>
+
+    <p id="direccion"></p>
+    <p id="tamaño"></p>
+
+    <button onclick="mostrarMensaje()">
+        Mostrar mensaje
+    </button>
+
+    <script>
+        // Obtener la dirección actual de la página
+        document.getElementById("direccion").textContent =
+            "Dirección actual: " + window.location.href;
+
+        // Obtener el tamaño de la ventana del navegador
+        document.getElementById("tamaño").textContent =
+            "Ancho: " + window.innerWidth +
+            " px | Alto: " + window.innerHeight + " px";
+
+        // Mostrar un mensaje utilizando el BOM
+        function mostrarMensaje() {
+            window.alert("¡Hola! Este es un ejemplo del BOM.");
+        }
+    </script>
+
+</body>
+</html>
+```
