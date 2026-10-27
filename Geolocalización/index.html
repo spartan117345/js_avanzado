@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalización con JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <p class="etiqueta">JavaScript · API del navegador</p>
+        <h1>Geolocalización</h1>
+        <p class="introduccion">
+            Presiona el botón y autoriza al navegador para consultar la ubicación de este dispositivo.
+        </p>
+
+        <button id="btnUbicacion" type="button">Obtener mi ubicación</button>
+        <p id="estado" class="estado" role="status" aria-live="polite">Esperando acción...</p>
+
+        <section id="resultado" class="resultado" hidden>
+            <p><strong>Latitud:</strong> <span id="latitud">—</span></p>
+            <p><strong>Longitud:</strong> <span id="longitud">—</span></p>
+            <p><strong>Precisión estimada:</strong> <span id="precision">—</span> metros</p>
+            <a id="mapa" href="#" target="_blank" rel="noopener noreferrer">Abrir coordenadas en Google Maps</a>
+        </section>
+
+        <p class="nota">
+            La ubicación solo se solicita al pulsar el botón. No compartas las coordenadas públicamente si revelan dónde vives.
+        </p>
+    </main>
+</body>
+</html>
